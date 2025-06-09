@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- You can link your custom CSS here if available -->
+  <!-- <link rel="stylesheet" href="css/custom.css" /> -->
+
+  <style>
+    .footer {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+
+    .footer-logo {
+      font-size: 40px;
+      margin-left: 10px;
+    }
+
+    .footer p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-card {
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* CSS to disable the button with a red circle and the 'not-allowed' cursor */
+    .disabled {
+      pointer-events: none;
+      /* Disable click events */
+      opacity: 0.5;
+      /* Make it look faded */
+      cursor: not-allowed;
+      /* Show the 'not-allowed' cursor */
+    }
+
+    .disabled:hover {
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MY PORTFOLIO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <!-- Projects Section -->
+    <h2 class="text-center mb-4">My Projects</h2>
+
+    <div class="row align-center">
+      <!-- Example Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card shadow-sm">
+          <img
+            src="images/pal.PNG"
+            class="card-img-top"
+            alt="Project 1 Image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Project 1 - ParcelPal Receiving System</h5>
+            <p class="card-text">
+              ParcelPal is an IoT-powered parcel receiving system integrated
+              with an Android app to enhance traditional parcel delivery. It
+              addresses challenges like physical unavailability and
+              communication issues by using smart lockboxes for secure parcel
+              storage and reducing manual intervention. The system’s Android app
+              notifies users of deliveries, improving efficiency and
+              convenience. By combining an Arduino-based receiving system with
+              a mobile app, ParcelPal aims to streamline the parcel delivery
+              process, offering seamless integration between the physical and
+              digital realms.
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary disabled"
+              id="privateBtn"
+              role="button"
+              aria-disabled="true"
+              >Private Project</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Example Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card shadow-sm">
+          <img
+            src="images/intern.png"
+            class="card-img-top"
+            alt="Project 2 Image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Project 2 - Intern DTR System</h5>
+            <p class="card-text">
+              The Intern DTR System is a web-based application designed to track
+              and manage the attendance of interns in a company. The system
+              provides an efficient and user-friendly way for interns to record
+              their daily attendance, either by scanning a QR code (for employees
+              within the office) or manually entering their attendance using
+              their smartphones (for remote work or when they are outside the
+              office). The system also includes an Admin Side where company
+              administrators can easily monitor intern activity, edit their
+              profiles, and ensure the smooth functioning of the attendance
+              process.
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary disabled"
+              id="privateBtn"
+              role="button"
+              aria-disabled="true"
+              >Private Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <!-- Footer Section -->
+    <div
+      class="footer d-flex justify-content-center align-items-center mt-5 py-3"
+    >
+      <!-- Center Content with Text and Logos -->
+      <div class="text-center">
+        <!-- "Made with" text and Logos -->
+        <div class="d-flex justify-content-center mt-3">
+          <p class="mr-3" style="font-size: 18px; font-weight: 500">
+            Made with
+          </p>
+          <!-- Laravel Icon -->
+          <span
+            class="iconify footer-logo"
+            data-icon="logos:laravel"
+            style="font-size: 40px; margin-right: 20px"
+          ></span>
+
+          <!-- Visual Studio Icon -->
+          <span
+            class="iconify footer-logo"
+            data-icon="logos:visual-studio"
+            style="font-size: 40px; margin-right: 20px"
+          ></span>
+
+          <!-- Bootstrap Icon -->
+          <span
+            class="iconify footer-logo"
+            data-icon="logos:bootstrap"
+            style="font-size: 40px"
+          ></span>
+        </div>
+
+        <!-- Copyright Text with space between logos and text -->
+        <p class="mt-5">
+          &copy; 2025 Jeff Clarence Tion. All Rights Reserved. <br />To God be the
+          Glory.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>

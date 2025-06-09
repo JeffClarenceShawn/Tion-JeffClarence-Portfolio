@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificates</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .certificate-card img {
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .certificate-card img:hover {
+      transform: scale(1.03);
+    }
+    .footer {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+    .footer-logo {
+      font-size: 40px;
+      margin-left: 10px;
+    }
+    .footer p {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MY PORTFOLIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="certificates.html">Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <h2 class="mb-5 text-center">Certificates</h2>
+
+  <!-- OJT Certificates -->
+  <section class="mb-5">
+    <h4 class="mb-4">OJT Certificates</h4>
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+        <div class="card certificate-card shadow-sm" style="max-width: 100%; width: 22rem;">
+          <img src="images/ojt.png" class="card-img-top" alt="On-the-Job Training Certificate at Eonbotz Technologies" data-bs-toggle="modal" data-bs-target="#modalOJT0" />
+          <div class="card-body text-center">
+            <p class="card-text">On-the-Job Training Certificate at Eonbotz Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Webinars -->
+  <section class="mb-5">
+    <h4 class="mb-4">Webinars</h4>
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+        <div class="card certificate-card shadow-sm" style="max-width: 100%; width: 22rem;">
+          <img src="images/web1.PNG" class="card-img-top" alt="Webinar on SWEEP Smart August 18, 2023" data-bs-toggle="modal" data-bs-target="#modalWebinar0" />
+          <div class="card-body text-center">
+            <p class="card-text">Webinar on SWEEP Smart August 18, 2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+        <div class="card certificate-card shadow-sm" style="max-width: 100%; width: 22rem;">
+          <img src="images/web2.PNG" class="card-img-top" alt="Webinar on SWEEP Smart August 30, 2023" data-bs-toggle="modal" data-bs-target="#modalWebinar1" />
+          <div class="card-body text-center">
+            <p class="card-text">Webinar on SWEEP Smart August 30, 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="mb-5">
+    <h4 class="mb-4">Events</h4>
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+        <div class="card certificate-card shadow-sm" style="max-width: 100%; width: 22rem;">
+          <img src="images/event1.PNG" class="card-img-top" alt="Certificate of Capstone Project 2023" data-bs-toggle="modal" data-bs-target="#modalEvent0" />
+          <div class="card-body text-center">
+            <p class="card-text">Certificate of Capstone Project 2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+        <div class="card certificate-card shadow-sm" style="max-width: 100%; width: 22rem;">
+          <img src="images/event3.PNG" class="card-img-top" alt="Certificate of Seminar (Machine Learning) 2023" data-bs-toggle="modal" data-bs-target="#modalEvent1" />
+          <div class="card-body text-center">
+            <p class="card-text">Certificate of Seminar (Machine Learning) 2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10 col-md-6 col-lg-4 mb-4 d-flex justify-content-center">
+        <div class="card certificate-card shadow-sm" style="max-width: 100%; width: 22rem;">
+          <img src="images/event2.PNG" class="card-img-top" alt="Certificate of Psychological Test 2023" data-bs-toggle="modal" data-bs-target="#modalEvent2" />
+          <div class="card-body text-center">
+            <p class="card-text">Certificate of Psychological Test 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+
+  <div class="modal fade" id="modalOJT0" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="images/ojt.png" class="img-fluid" alt="On-the-Job Training Certificate at Eonbotz Technologies" />
+          <p class="mt-3">On-the-Job Training Certificate at Eonbotz Technologies</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWebinar0" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="images/web1.PNG" class="img-fluid" alt="Webinar on SWEEP Smart August 18, 2023" />
+          <p class="mt-3">Webinar on SWEEP Smart August 18, 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWebinar1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="images/web2.PNG" class="img-fluid" alt="Webinar on SWEEP Smart August 30, 2023" />
+          <p class="mt-3">Webinar on SWEEP Smart August 30, 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEvent0" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="images/event1.PNG" class="img-fluid" alt="Certificate of Capstone Project 2023" />
+          <p class="mt-3">Certificate of Capstone Project 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEvent1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="images/event3.PNG" class="img-fluid" alt="Certificate of Seminar (Machine Learning) 2023" />
+          <p class="mt-3">Certificate of Seminar (Machine Learning) 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEvent2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="images/event2.PNG" class="img-fluid" alt="Certificate of Psychological Test 2023" />
+          <p class="mt-3">Certificate of Psychological Test 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-5" />
+
+  <div class="footer d-flex justify-content-center align-items-center mt-5 py-3">
+    <div class="text-center">
+      <div class="d-flex justify-content-center mt-3">
+        <p class="mr-3" style="font-size: 18px; font-weight: 500;">Made with</p>
+        <span class="iconify footer-logo" data-icon="logos:laravel" style="font-size: 40px; margin-right: 20px;"></span>
+        <span class="iconify footer-logo" data-icon="logos:visual-studio" style="font-size: 40px; margin-right: 20px;"></span>
+        <span class="iconify footer-logo" data-icon="logos:bootstrap" style="font-size: 40px;"></span>
+      </div>
+      <p class="mt-5">&copy; 2025 Jeff Clarence Tion. All Rights Reserved. <br />To God be the Glory.</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+</body>
+</html>

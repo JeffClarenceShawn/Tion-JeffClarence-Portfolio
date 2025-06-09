@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Replace with your actual custom CSS file if needed -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <style>
+        /* Footer Styling */
+        .footer {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .footer-logo {
+            font-size: 40px;
+            margin-left: 10px;
+        }
+
+        .footer p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Image and description styling */
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px 0;
+        }
+
+        .about-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .about-image {
+            flex: 1;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-image:hover {
+            transform: translateX(20px);
+        }
+
+        /* Animation for image when scrolling */
+        .about-image.animate {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll Animation */
+        .scroll-animate {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .scroll-animate.visible {
+            opacity: 1;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .about-image {
+                margin-top: 20px;
+            }
+        }
+
+        .carousel-image-box {
+            width: 100%;
+            height: 500px; /* Fixed height */
+            overflow: hidden; /* Hide overflowed part of the image */
+            position: relative;
+        }
+
+        .carousel-image-box img {
+            object-fit: cover; /* Ensures the image covers the box without distortion */
+            width: 100%; /* Ensures the image fills the width */
+            height: 100%; /* Ensures the image fills the height */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">MY PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<div class="container my-5">
+    <div class="mb-4 text-center">
+        <h2>Retreat at HCDC Maritime Training Center</h2>
+    </div>
+    <div class="card">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat11.jpeg" class="d-block w-100 rounded" alt="Retreat Image 1" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat10.jpeg" class="d-block w-100 rounded" alt="Retreat Image 2" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat4.JPG" class="d-block w-100 rounded" alt="Retreat Image 3" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat9.jpeg" class="d-block w-100 rounded" alt="Retreat Image 4" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat5.JPG" class="d-block w-100 rounded" alt="Retreat Image 5" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat3.JPG" class="d-block w-100 rounded" alt="Retreat Image 6" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat2.JPG" class="d-block w-100 rounded" alt="Retreat Image 7" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat1.jpeg" class="d-block w-100 rounded" alt="Retreat Image 8" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat6.JPG" class="d-block w-100 rounded" alt="Retreat Image 9" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image-box">
+                        <img src="images/retreat7.JPG" class="d-block w-100 rounded" alt="Retreat Image 10" />
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="about-text">
+            <p class="lead">
+                I had the incredible opportunity to attend a retreat at the <strong>HCDC Maritime Training Center</strong> located in Camudmud, Samal Island.
+                This experience helped me not only in improving my technical skills but also in developing leadership qualities through various workshops and activities.
+            </p>
+            <p>
+                During the retreat, we engaged in several team-building exercises, reflected on ways to care for Mother Earth, and participated in activities that emphasized sustainability and environmental care.
+                It was a perfect mix of both personal growth and environmental responsibility.
+            </p>
+
+            <h3>Spiritual Reflection</h3>
+            <p>
+                The retreat was not only a time for learning new skills but also a time to reflect spiritually. The theme of the retreat,
+                <strong>"Pilgrims of Hope: Walking lightly, Caring deeply"</strong>, encouraged us to embrace a journey of purpose and compassion.
+            </p>
+            <p>
+                Two Bible verses particularly resonated with me during this time:
+            </p>
+            <blockquote>
+                <p><strong>John 14:6 (NIV):</strong> <em>"Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'</em></p>
+                <p><strong>Jeremiah 29:11 (NIV):</strong> <em>"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you a hope and a future."</em></p>
+            </blockquote>
+            <p>
+                These verses reminded me that our path in life is guided by faith, and that with purpose and hope, we can face any challenge that comes our way.
+                As pilgrims, we are called to walk lightly, unburdened by the weight of the world, yet deeply invested in caring for others and fulfilling our God-given purpose.
+            </p>
+            <p>
+                Through "Micro Actions," such as reducing waste, conserving energy, and protecting nature, we can have a positive impact on our environment.
+                Together, these actions lead to "Macro Contributions," where collective care for the Earth can result in meaningful change.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer d-flex justify-content-center align-items-center mt-5 py-3">
+    <div class="text-center">
+        <!-- "Made with" text and Logos -->
+        <div class="d-flex justify-content-center mt-3">
+            <p class="mr-3" style="font-size: 18px; font-weight: 500;">Made with</p>
+            <!-- Laravel Icon -->
+            <span class="iconify footer-logo" data-icon="logos:laravel" style="font-size: 40px; margin-right: 20px;"></span>
+            
+            <!-- Visual Studio Icon -->
+            <span class="iconify footer-logo" data-icon="logos:visual-studio" style="font-size: 40px; margin-right: 20px;"></span>
+            
+            <!-- Bootstrap Icon -->
+            <span class="iconify footer-logo" data-icon="logos:bootstrap" style="font-size: 40px;"></span>
+        </div>
+
+        <p class="mt-5">&copy; 2025 Jeff Clarence Tion. All Rights Reserved. <br />To God be the Glory.</p>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+<!-- Scroll Animation Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.scroll-animate');
+
+        function checkVisibility() {
+            elements.forEach(function(element) {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility();  // Initial check
+    });
+</script>
+
+</body>
+</html>
